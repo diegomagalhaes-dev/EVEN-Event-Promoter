@@ -23,15 +23,15 @@ body {
     height: 300px;
 }
 
-.categories_list .li_1 {
+.categories_list li:nth-child(1) {
     background-image: url(/Assets/wedding.png);
 }
 
-.categories_list .li_2 {
+.categories_list li:nth-child(2) {
     background-image: url(/Assets/conference.png);
 }
 
-.categories_list .li_3 {
+.categories_list li:nth-child(3) {
     background-image: url(/Assets/graduation.png);
 }
 
@@ -229,4 +229,160 @@ body {
     padding-top: 40px;
     clear: both;
     text-align: center;
+}
+
+.portfolio {
+    padding-top: 40px;
+    width: 100%;
+    background: #151717;
+}
+
+.portfolio .subtitle {
+    color: #e6e6e6;
+    margin-bottom: 40px;
+}
+
+.portfolio .call {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.items_portfolio li:last-child {
+    margin-top: 20px;
+}
+
+.img_previewPort {
+    border: ridge rgba(23, 192, 194, 100%);
+    border-width: 2px;
+    display: flex;
+    min-height: 280px;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.img_previewPort:first-child {
+    background-image: url(/Assets/port1v2.jpg);
+}
+
+.img_previewPort:nth-child(2) {
+    background-image: url(/Assets/port3.jpg);
+}
+
+.img_previewPort:nth-child(3) {
+    background-image: url(/Assets/port2.jpg);
+}
+
+.about {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.about img{
+    margin-top: 40px;
+}
+
+.about .call{
+    margin-top: 5px;
+}
+
+
+.card_li {
+    background-color: #191C1D;
+    padding: 20px 20px 20px 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+.card_li h3 {
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #e6e6e6;
+    font-size: 18px;
+}
+
+.card_li:nth-child(1) h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #17C0C2;
+    margin-top: 8px;
+}
+
+.card_li:nth-child(2) h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #e6e6e6;
+    margin-top: 8px;
+}
+
+.card_li:nth-child(3) h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #E63946;
+    margin-top: 8px;
+}
+
+.card_li p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #8A8C8C;
+}
+
+.feedback{
+    display: block;
+    align-items: column;
+    background-color: #191C1D;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+} 
+
+.feedback .subtitle {
+    color: #e6e6e6;
+    margin-top: 40px;
+}
+
+.feedback ul li:nth-child(1){
+    position: absolute;
+    padding:20px;
+    border: solid #17C0C2;
+    border-radius: 8px;
+}
+
+.feedback ul li:nth-child(2){
+    padding:20px;
+    border: solid #E63946;
+    border-radius: 8px;
+}
+.feedback ul li:nth-child(3){
+    padding:20px;
+    border: solid #e6e6e6;
+    border-radius: 8px;
+}
+.feedback ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.perfil{
+    height: 30px;
+    width: 30px;
+    background-color: #19314A;
+}
+
+.perfil:nth-child(1){
+    position: absolute;
+    margin-top: -13%;
+    margin-left: 5px;
 }
