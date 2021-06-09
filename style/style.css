@@ -23,15 +23,15 @@ body {
 }
 
 .categories_list li:nth-child(1) {
-    background-image: url(/Assets/wedding.png);
+    background-image: url("/Assets/wedding.png");
 }
 
 .categories_list li:nth-child(2) {
-    background-image: url(/Assets/conference.png);
+    background-image: url("/Assets/conference.png");
 }
 
 .categories_list li:nth-child(3) {
-    background-image: url(/Assets/graduation.png);
+    background-image: url("/Assets/graduation.png");
 }
 
 .subtitle {
@@ -253,15 +253,15 @@ body {
 }
 
 .img_previewPort:first-child {
-    background-image: url(/Assets/port1v2.jpg);
+    background-image: url("/Assets/port1v2.jpg");
 }
 
 .img_previewPort:nth-child(2) {
-    background-image: url(/Assets/port3.jpg);
+    background-image: url("/Assets/port3.jpg");
 }
 
 .img_previewPort:nth-child(3) {
-    background-image: url(/Assets/port2.jpg);
+    background-image: url("/Assets/port2.jpg");
 }
 
 .about {
@@ -368,7 +368,7 @@ body {
 }
 
 .feedback ul li:nth-child(1) .perfil {
-    background-image: url(/Assets/person1.jpg);
+    background-image: url("/Assets/person1.jpg");
     background-size: cover;
     background-position: center;
     border: solid #17C0C2;
@@ -377,7 +377,7 @@ body {
 }
 
 .feedback ul li:nth-child(2) .perfil {
-    background-image: url(/Assets/person3.jpg);
+    background-image: url("/Assets/person3.jpg");
     background-size: cover;
     background-position: center;
     border: solid #17C0C2;
@@ -386,7 +386,7 @@ body {
 }
 
 .feedback ul li:nth-child(3) .perfil {
-    background-image: url(/Assets/person2.jpg);
+    background-image: url("/Assets/person2.jpg");
     background-size: cover;
     background-position: center;
     border: solid #17C0C2;
@@ -440,7 +440,7 @@ body {
 .footer {
     padding: 20px 0px 0px 0px;
     width: 100%;
-    background-image: url(/Assets/background.jpg);
+    background-image: url("/Assets/background.jpg");
     color: #f1f2f3;
 }
 
