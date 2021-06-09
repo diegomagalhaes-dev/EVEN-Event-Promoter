@@ -81,14 +81,14 @@ body {
 
 .background {
     height: 100vh;
-    background: #19314A url("/Assets/background.jpg") no-repeat fixed;
+    background: #19314A url("../Assets/background.jpg") no-repeat fixed;
     z-index: 10;
 }
 
 
 .header {
     width: 100%;
-    background: #19314A url("/Assets/background.jpg") no-repeat;
+    background: #19314A url("../Assets/background.jpg") no-repeat;
     position: fixed;
     top: 0;
     padding: 10px 0;
