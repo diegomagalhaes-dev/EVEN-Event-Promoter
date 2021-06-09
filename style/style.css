@@ -81,16 +81,38 @@ body {
 
 .background {
     height: 100vh;
-    background: #19314A url("/Assets/background.jpg") no-repeat;
+    background: #19314A url("/Assets/background.jpg") no-repeat fixed;
 }
 
+.background::before{
+    content: '';
+    background-color: #191C1D;
+    height: 50%;
+    left: 0%;
+    position:absolute;
+    top: 100%;
+    transform-origin: right;
+    transform:skewY(12deg);
+    width: 50%;
+}
+.background::after{
+    content: '';
+    background-color: #191C1D;
+    height: 30%;
+    right: 0%;
+    position:absolute;
+    top: 100%;
+    transform-origin: left;
+    transform:skewY(-12deg);
+    width: 50%;
+}
 .header {
     width: 100%;
     background: #19314A url("/Assets/background.jpg") no-repeat;
     position: fixed;
     top: 0;
     padding: 10px 0;
-    z-index: 1;
+    z-index: 5;
 }
 
 .menu_header {
@@ -163,13 +185,15 @@ body {
 
 .secon_homeSec {
     width: 100%;
-    background-color: #e6e6e6;
-    transform: skewY(-3deg);
+    background-color: #191C1D;
+}
+
+.secon_homeSec .subtitle{
+    color: #e6e6e6;
 }
 
 .categories {
     padding: 60px 0;
-    transform: skewY(3deg);
 }
 
 .list_item-icon {
