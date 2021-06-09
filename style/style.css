@@ -81,7 +81,7 @@ body {
 
 .background {
     height: 100vh;
-    background: #19314A url("../Assets/background.jpg") no-repeat fixed;
+    background: #19314A url(/Assets/background.jpg) no-repeat fixed;
     z-index: 10;
 }
 
