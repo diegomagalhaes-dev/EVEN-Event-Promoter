@@ -82,30 +82,10 @@ body {
 .background {
     height: 100vh;
     background: #19314A url("/Assets/background.jpg") no-repeat fixed;
+    z-index: 10;
 }
 
-.background::before{
-    content: '';
-    background-color: #191C1D;
-    height: 50%;
-    left: 0%;
-    position:absolute;
-    top: 100%;
-    transform-origin: right;
-    transform:skewY(12deg);
-    width: 50%;
-}
-.background::after{
-    content: '';
-    background-color: #191C1D;
-    height: 30%;
-    right: 0%;
-    position:absolute;
-    top: 100%;
-    transform-origin: left;
-    transform:skewY(-12deg);
-    width: 50%;
-}
+
 .header {
     width: 100%;
     background: #19314A url("/Assets/background.jpg") no-repeat;
@@ -188,7 +168,7 @@ body {
     background-color: #191C1D;
 }
 
-.secon_homeSec .subtitle{
+.secon_homeSec .subtitle {
     color: #e6e6e6;
 }
 
@@ -220,6 +200,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0px 0px 7px rgb(241, 242, 243, 40%);
 }
 
 .call .btn-g:hover {
@@ -233,7 +214,7 @@ body {
 .categories_list li h3 {
     padding-top: 45%;
     letter-spacing: .1em;
-    color: #e6e6e6;
+    color: #f1f2f3;
 }
 
 .call {
@@ -263,7 +244,7 @@ body {
 }
 
 .img_previewPort {
-    border: ridge rgba(23, 192, 194, 100%);
+    border: solid rgba(23, 192, 194, 80%);
     border-width: 2px;
     display: flex;
     min-height: 280px;
@@ -381,7 +362,7 @@ body {
 
 .feedback ul li:nth-child(1) {
     padding: 0px 20px 10px 20px;
-    border: groove #17C0C2;
+    border: solid #17C0C2;
     border-width: 2px;
     border-radius: 8px;
 }
@@ -390,7 +371,7 @@ body {
     background-image: url(/Assets/person1.jpg);
     background-size: cover;
     background-position: center;
-    border: groove #17C0C2;
+    border: solid #17C0C2;
     border-width: 2px;
     border-radius: 8px;
 }
@@ -399,7 +380,7 @@ body {
     background-image: url(/Assets/person3.jpg);
     background-size: cover;
     background-position: center;
-    border: groove #e6e6e6;
+    border: solid #17C0C2;
     border-width: 2px;
     border-radius: 8px;
 }
@@ -408,21 +389,21 @@ body {
     background-image: url(/Assets/person2.jpg);
     background-size: cover;
     background-position: center;
-    border: groove #E63946;
+    border: solid #17C0C2;
     border-width: 2px;
     border-radius: 8px;
 }
 
 .feedback ul li:nth-child(2) {
     padding: 0px 20px 10px 20px;
-    border: groove#e6e6e6;
+    border: solid #17C0C2;
     border-width: 2px;
     border-radius: 8px;
 }
 
 .feedback ul li:nth-child(3) {
     padding: 0px 20px 10px 20px;
-    border: groove #E63946;
+    border: solid #17C0C2;
     border-width: 2px;
     border-radius: 8px;
 }
