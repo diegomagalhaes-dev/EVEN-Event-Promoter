@@ -6,7 +6,6 @@ a {
 
 body {
     font-family: 'Montserrat', 'Open-Sans', sans-serif;
-    height: 20000px;
 }
 
 .categories_list {
@@ -165,25 +164,13 @@ body {
 .secon_homeSec {
     width: 100%;
     background-color: #e6e6e6;
+    transform: skewY(-3deg);
 }
 
 .categories {
     padding: 60px 0;
+    transform: skewY(3deg);
 }
-
-/* .categories_list li {
-    background: #184D61;
-    text-align: center;
-} */
-
-/* .categories_list li h3 {
-    font-weight: 500;
-    font-size: 1.125em;
-    line-height: 1.5em;
-    text-transform: uppercase;
-    letter-spacing: .1em;
-
-} */
 
 .list_item-icon {
     background: #191C1D;
@@ -280,11 +267,11 @@ body {
     align-items: center;
 }
 
-.about img{
+.about img {
     margin-top: 40px;
 }
 
-.about .call{
+.about .call {
     margin-top: 5px;
 }
 
@@ -339,50 +326,167 @@ body {
     color: #8A8C8C;
 }
 
-.feedback{
-    display: block;
-    align-items: column;
+.feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #191C1D;
     width: 100%;
-    height: 300px;
-    align-items: center;
-} 
+    padding-bottom: 40px;
+}
 
 .feedback .subtitle {
     color: #e6e6e6;
     margin-top: 40px;
 }
 
-.feedback ul li:nth-child(1){
-    position: absolute;
-    padding:20px;
-    border: solid #17C0C2;
-    border-radius: 8px;
-}
-
-.feedback ul li:nth-child(2){
-    padding:20px;
-    border: solid #E63946;
-    border-radius: 8px;
-}
-.feedback ul li:nth-child(3){
-    padding:20px;
-    border: solid #e6e6e6;
-    border-radius: 8px;
-}
-.feedback ul{
+.feedback ul {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
-.perfil{
-    height: 30px;
+.feedback ul li {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: .02em;
+    color: #e6e6e6;
+}
+
+.feedback ul li:nth-child(1) {
+    padding: 0px 20px 10px 20px;
+    border: groove #17C0C2;
+    border-width: 2px;
+    border-radius: 8px;
+}
+
+.feedback ul li:nth-child(1) .perfil {
+    background-image: url(/Assets/person1.jpg);
+    background-size: cover;
+    background-position: center;
+    border: groove #17C0C2;
+    border-width: 2px;
+    border-radius: 8px;
+}
+
+.feedback ul li:nth-child(2) .perfil {
+    background-image: url(/Assets/person3.jpg);
+    background-size: cover;
+    background-position: center;
+    border: groove #e6e6e6;
+    border-width: 2px;
+    border-radius: 8px;
+}
+
+.feedback ul li:nth-child(3) .perfil {
+    background-image: url(/Assets/person2.jpg);
+    background-size: cover;
+    background-position: center;
+    border: groove #E63946;
+    border-width: 2px;
+    border-radius: 8px;
+}
+
+.feedback ul li:nth-child(2) {
+    padding: 0px 20px 10px 20px;
+    border: groove#e6e6e6;
+    border-width: 2px;
+    border-radius: 8px;
+}
+
+.feedback ul li:nth-child(3) {
+    padding: 0px 20px 10px 20px;
+    border: groove #E63946;
+    border-width: 2px;
+    border-radius: 8px;
+}
+
+.perfil {
+    position: absolute inherit;
+    /* refatorar: isso ta muito "olhomêtro" */
+    margin-top: -12.5%;
+    margin-bottom: 20px;
+    height: 60px;
+    width: 60px;
+}
+
+
+.feedback ul li blockquote {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback ul li blockquote p {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: .1em;
+    line-height: 1.4em;
+}
+
+.feedback ul li blockquote cite {
+    font-weight: 600;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.footer {
+    padding: 20px 0px 0px 0px;
+    width: 100%;
+    background-image: url(/Assets/background.jpg);
+    color: #f1f2f3;
+}
+
+.socialNetwork_footer ul li a img {
     width: 30px;
-    background-color: #19314A;
+    height: 30px;
 }
 
-.perfil:nth-child(1){
-    position: absolute;
-    margin-top: -13%;
-    margin-left: 5px;
+.socialNetwork_footer ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.socialNetwork_footer ul li a {
+    border: 2px solid #17C0C2;
+    display: block;
+    padding: 10px;
+}
+
+.socialNetwork_footer ul li a:hover {
+    background-color: #f1f2f3;
+}
+
+.footer h3 {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #f1f2f3;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.footer h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #17C0C2;
+    margin: 6px 0 12px 0;
+}
+
+.history_footer {
+    padding-right: 40px;
+}
+
+.copyright {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    letter-spacing: .08em;
+    line-height: 20px;
 }
