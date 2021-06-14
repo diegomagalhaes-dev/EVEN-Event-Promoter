@@ -41,7 +41,7 @@ body {
 
 .btn:hover {
     box-shadow: .1em .2em 16px #E63946;
-    color: #e6e6e6
+    color: #f1f2f3
 }
 
 .btn-g {
@@ -56,7 +56,7 @@ body {
 
 .background {
     height: 100vh;
-    background: #19314A url("../Assets/background.jpg") no-repeat fixed;
+    background: #19314A url("../Assets/background.jpg") fixed;
     z-index: 10;
 }
 
@@ -81,7 +81,7 @@ body {
 }
 
 .menu_header ul li a {
-    color: #e6e6e6;
+    color: #f1f2f3;
     font-weight: 600;
     letter-spacing: .08em;
     font-size: .875em;
@@ -105,7 +105,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 56px;
-    color: #e6e6e6;
+    color: #f1f2f3;
 }
 
 .introduction .container {
@@ -135,7 +135,7 @@ body {
     font-weight: 500;
     font-size: 14px;
     letter-spacing: .1em;
-    color: #e6e6e6
+    color: #f1f2f3
 }
 
 /* ===== Categorias ====== */
@@ -145,7 +145,7 @@ body {
 }
 
 .secon_homeSec .subtitle {
-    color: #e6e6e6;
+    color: #f1f2f3;
 }
 
 .categories {
@@ -198,9 +198,13 @@ body {
 .categories_list li:hover:after {
     height: 44px;
     font-size: 16px;
-    cursor: pointer;
     line-height: 20px;
     padding-top: 13px;
+}
+
+.categories_list li object {
+    width: 100%;
+    height: 160px;
 }
 
 .categories_list li img {
@@ -226,7 +230,7 @@ body {
 }
 
 .portfolio .subtitle {
-    color: #e6e6e6;
+    color: #f1f2f3;
     margin-bottom: 40px;
 }
 
@@ -290,7 +294,7 @@ body {
 .card_li h3 {
     font-weight: 700;
     margin-bottom: 12px;
-    color: #e6e6e6;
+    color: #f1f2f3;
     font-size: 18px;
 }
 
@@ -308,7 +312,7 @@ body {
     display: block;
     width: 60px;
     height: 2px;
-    background: #e6e6e6;
+    background: #f1f2f3;
     margin-top: 8px;
 }
 
@@ -327,112 +331,93 @@ body {
     color: #8A8C8C;
 }
 
-.feedback {
+.testimonials {
+    padding: 40px 0;
+    background: #191C1D;
+    color: #f1f2f3;
+    text-align: center;
+}
+
+.testimonials .subtitle{
+    color: #f1f2f3
+}
+
+.inner {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.border {
+    width: 20px;
+    height: 2px;
+    background: #17C0C2;
+    margin: 10px auto;
+}
+
+.row {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #191C1D;
-    width: 100%;
-    padding-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.feedback .subtitle {
-    color: #e6e6e6;
-    margin-top: 40px;
+.col {
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding-top: 40px;
 }
 
-.feedback ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 60px;
-    margin-bottom: 60px;
+.testimonial {
+    background: #151717;
+    padding: 20px;
 }
 
-.feedback ul li {
+.testimonial .perfil {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.row li:nth-child(1) .perfil{
+    background: url("../Assets/person1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.row li:nth-child(2) .perfil{
+    background: url("../Assets/person3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.row li:nth-child(3) .perfil{
+    background: url("../Assets/person2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.name {
     font-size: 16px;
-    font-weight: 500;
-    letter-spacing: .02em;
-    color: #e6e6e6;
+    text-transform: uppercase;
+    margin: 20px 0;
 }
 
-.feedback ul li:nth-child(1) {
-    padding: 0px 20px 10px 20px;
-    border: solid #17C0C2;
-    border-width: 2px;
-    border-radius: 8px;
-}
-
-.feedback ul li:nth-child(1) .perfil {
-    background-image: url("../Assets/person1.jpg");
-    background-size: cover;
-    background-position: center;
-    border: solid #17C0C2;
-    border-width: 2px;
-    border-radius: 8px;
-}
-
-.feedback ul li:nth-child(2) .perfil {
-    background-image: url("../Assets/person3.jpg");
-    background-size: cover;
-    background-position: center;
-    border: solid #17C0C2;
-    border-width: 2px;
-    border-radius: 8px;
-}
-
-.feedback ul li:nth-child(3) .perfil {
-    background-image: url("../Assets/person2.jpg");
-    background-size: cover;
-    background-position: center;
-    border: solid #17C0C2;
-    border-width: 2px;
-    border-radius: 8px;
-}
-
-.feedback ul li:nth-child(2) {
-    padding: 0px 20px 10px 20px;
-    border: solid #17C0C2;
-    border-width: 2px;
-    border-radius: 8px;
-}
-
-.feedback ul li:nth-child(3) {
-    padding: 0px 20px 10px 20px;
-    border: solid #17C0C2;
-    border-width: 2px;
-    border-radius: 8px;
-}
-
-.perfil {
-    position: absolute inherit;
-    /* refatorar: isso ta muito "olhomêtro" */
-    margin-top: -12.5%;
+.stars {
+    color: #E63946;
     margin-bottom: 20px;
-    height: 60px;
-    width: 60px;
 }
 
-
-.feedback ul li blockquote {
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width:960px) {
+    .col {
+        flex: 100%;
+        max-width: 80%;
+    }
 }
 
-.feedback ul li blockquote p {
-    font-style: italic;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: .1em;
-    line-height: 1.2em;
-}
-
-.feedback ul li blockquote cite {
-    font-weight: 600;
-    margin-top: 5px;
-    letter-spacing: 0;
-    font-size: 16px;
-    text-align: right;
+@media screen and (max-width:600px) {
+    .col {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
 
 .footer {
@@ -441,6 +426,8 @@ body {
     background-color: #151717;
     color: #f1f2f3;
 }
+
+
 
 .socialNetwork_footer ul li a img {
     width: 30px;
@@ -453,13 +440,11 @@ body {
 }
 
 .socialNetwork_footer ul li a {
-    border: 2px solid #17C0C2;
     display: block;
-    padding: 10px;
 }
 
-.socialNetwork_footer ul li a:hover {
-    background-color: #f1f2f3;
+.socialNetwork_footer ul li a img:hover {
+    color: #E63946;
 }
 
 .footer h3 {
@@ -478,7 +463,7 @@ body {
     margin: 6px 0 12px 0;
 }
 
-.history_footer {
+.footer .container div {
     font-size: 14px;
     line-height: 20px;
     font-weight: 500;
