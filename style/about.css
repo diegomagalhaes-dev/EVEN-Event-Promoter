@@ -15,36 +15,93 @@
     padding-bottom: 40px;
 }
 
-.subtitlev2 {
-    font-size: 18px;
-    font-weight: 600;
-    color: #f1f2f3;
-    letter-spacing: .1em;
-}
-
-.subtitlev2::after {
-    content: '';
-    display: block;
-    width: 40px;
-    height: 2px;
-    margin: 5px 0px 10px 10px;
-    background: #17c0c2;
-}
-
 .history p {
     color: #f1f2f3;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
+    text-align: left;
     padding-bottom: 1em;
     padding-right: 60px;
+    letter-spacing: .009em;
+    line-height: 1.3em;
 }
 
-.listvalues{
-    color:#f1f2f3;
+.listvalues {
+    color: #f1f2f3;
     font-size: 14px;
     font-weight: 500;
+    text-align: left;
+    letter-spacing: .009em;
+    line-height: 1.3em;
 }
 
-.listvalues li{
+.listvalues li {
     padding-bottom: 1em;
+    line-height: 1.3em;
+}
+
+.team {
+    width: 100%;
+    background: #191C1D;
+    padding-top: 40px;
+}
+
+.team .internal-subtitle {
+    color: #f1f2f3;
+    text-align: center;
+}
+
+.team .internal-subtitle::after {
+    margin: 5px auto;
+}
+
+.c-carousel_responsive {
+    max-width: 940px;
+}
+
+.c-carousel_slides {
+    text-align: center;
+    height: 400px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.js-carousel--dots {
+    margin-bottom: 40px;
+}
+
+.c-carousel_slide {
+    align-items: center;
+    display: flex;
+    padding-top: 400px;
+}
+
+.c-carousel_slide:nth-child(1) {
+    background: url("../Assets/team.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.c-carousel_slide:nth-child(2) {
+    background: url("../Assets/security.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.c-carousel_slide:nth-child(3) {
+    background: url("../Assets/cooker.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.c-carousel_slide:nth-child(4) {
+    background: url("../Assets/team.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.c-carousel_slide:nth-child(5) {
+    background: url("../Assets/security.jpg");
+    background-size: cover;
+    background-position: center;
 }

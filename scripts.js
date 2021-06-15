@@ -1,11 +1,21 @@
-new Vivus('cog', {
-    duration: 250
-})
-
-new Vivus('cog1', {
-    duration: 300
-})
-
-new Vivus('cog2', {
-    duration: 100
+const $simpleCarousel = document.querySelector(".js-carousel");
+new Glider($simpleCarousel, {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    draggable: true,
+    dots: ".js-carousel--dots",
+    arrows: {
+        prev: ".js-carousel--prev",
+        next: ".js-carousel--next"
+    },
+    scrollLock: true,
+    responsive: [
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToShow: 1
+            }
+        }
+    ]
 })
