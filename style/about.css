@@ -1,35 +1,50 @@
-.internal-introduction{
+.internal-introduction {
     background: url("../Assets/background.jpg");
     width: 100%;
     padding-top: 80px;
     padding-bottom: 40px;
 }
 
-.internal-introduction .subtitle{
+.internal-introduction .subtitle {
     color: #f1f2f3;
 }
 
-.info{
+.info {
     background: #151717;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-.subtitlev2{
-    font-weight: 700;
-    font-size:16px;
-    line-height: 30px;
-    text-transform: uppercase;
-    letter-spacing: .1em;
+.subtitlev2 {
+    font-size: 18px;
+    font-weight: 600;
     color: #f1f2f3;
-    text-align: left;
+    letter-spacing: .1em;
 }
 
-.subtitlev2::after{
+.subtitlev2::after {
     content: '';
     display: block;
     width: 40px;
     height: 2px;
-    background: #17C0C2;
-    margin: 5px 10px;
+    margin: 5px 0px 10px 10px;
+    background: #17c0c2;
+}
+
+.history p {
+    color: #f1f2f3;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 1em;
+    padding-right: 60px;
+}
+
+.listvalues{
+    color:#f1f2f3;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.listvalues li{
+    padding-bottom: 1em;
 }
