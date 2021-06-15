@@ -331,6 +331,7 @@ body {
     color: #8A8C8C;
 }
 
+/* Feedbacks  */
 .testimonials {
     padding: 40px 0;
     background: #191C1D;
@@ -338,7 +339,7 @@ body {
     text-align: center;
 }
 
-.testimonials .subtitle{
+.testimonials .subtitle {
     color: #f1f2f3
 }
 
@@ -349,16 +350,12 @@ body {
     padding: 0 20px;
 }
 
-.border {
-    width: 20px;
-    height: 2px;
-    background: #17C0C2;
-    margin: 10px auto;
-}
-
 .row {
+    padding-top: 40px;
     display: flex;
+    max-width: 960px;
     flex-wrap: wrap;
+    margin: 0 auto;
     justify-content: center;
 }
 
@@ -366,43 +363,56 @@ body {
     flex: 33.33%;
     max-width: 33.33%;
     box-sizing: border-box;
-    padding-top: 40px;
+    padding: 10px;
 }
 
 .testimonial {
+    border-radius: 8px;
     background: #151717;
-    padding: 20px;
+    font-size: 14px;
+    line-height: 18px;
+    font-style: oblique;
+    letter-spacing: .04em;
+    font-weight: 400;
+    padding: 40px 10px 40px 10px;
 }
 
 .testimonial .perfil {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+    border: solid #17C0C2 2px;
     border-radius: 50%;
+    margin: 0 auto;
 }
 
-.row li:nth-child(1) .perfil{
+.row li:nth-child(1) .perfil {
     background: url("../Assets/person1.jpg");
     background-size: cover;
     background-position: center;
 }
-.row li:nth-child(2) .perfil{
+
+.row li:nth-child(2) .perfil {
     background: url("../Assets/person3.jpg");
     background-size: cover;
     background-position: center;
 }
-.row li:nth-child(3) .perfil{
+
+.row li:nth-child(3) .perfil {
     background: url("../Assets/person2.jpg");
     background-size: cover;
     background-position: center;
 }
+
 .name {
     font-size: 16px;
+    font-style: normal;
     text-transform: uppercase;
+    font-weight: 600;
     margin: 20px 0;
 }
 
 .stars {
-    color: #E63946;
+    color: #17C0C2;
     margin-bottom: 20px;
 }
 
