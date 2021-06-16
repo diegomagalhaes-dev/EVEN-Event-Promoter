@@ -4,10 +4,6 @@ new Glider($simpleCarousel, {
     slidesToScroll: 1,
     draggable: true,
     dots: ".js-carousel--dots",
-    arrows: {
-        prev: ".js-carousel--prev",
-        next: ".js-carousel--next"
-    },
     scrollLock: true,
     responsive: [
         {

@@ -1,14 +1,3 @@
-.internal-introduction {
-    background: url("../Assets/background.jpg");
-    width: 100%;
-    padding-top: 80px;
-    padding-bottom: 40px;
-}
-
-.internal-introduction .subtitle {
-    color: #f1f2f3;
-}
-
 .info {
     background: #151717;
     padding-top: 40px;

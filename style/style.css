@@ -84,7 +84,7 @@ body {
     background: #19314A url("../Assets/background.jpg") no-repeat;
     position: fixed;
     top: 0;
-    padding: 10px 0;
+    padding: 12px 0;
     z-index: 12;
 }
 
@@ -100,14 +100,18 @@ body {
 
 .menu_header ul li a {
     color: #f1f2f3;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: .08em;
-    font-size: .875em;
+    font-size: 14px;
     line-height: 20px;
     padding: 10px 0;
 }
 
 .menu_header ul li a:hover {
+    color: #17C0C2;
+}
+
+.menu_header ul li a.actv_menu {
     color: #17C0C2;
 }
 
@@ -129,6 +133,17 @@ body {
 .introduction .container {
     padding-top: 10%;
     display: flex;
+}
+
+.internal-introduction {
+    background: url("../Assets/background.jpg");
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.internal-introduction .subtitle {
+    color: #f1f2f3;
 }
 
 .img_intro {
