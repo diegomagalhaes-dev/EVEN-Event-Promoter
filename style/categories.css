@@ -3,7 +3,7 @@
     background: #151717;
 }
 
-.categorie_icon {
+.categorie_icon {   
     background: url("../Assets/background.jpg");
     height: 200px;
     padding-bottom: 250px;
@@ -16,20 +16,25 @@
     object-position: center;
 }
 
-.categorie_item div:nth-child(3) img {
-    object-position: bottom;
+.container div:nth-child(1) img {
+    object-position: 1px 85%;
 }
 
+
 .categorie_item h2 {
-    font-size: 36px;
+    font-size: 48px;
     text-transform: uppercase;
-    color: #f1f2f3;
-    font-weight: 700;
-    letter-spacing: .1em;
+    font-weight: 200;
+    letter-spacing: .2em;
     line-height: 1em;
     position: relative;
     top: -150px;
+    margin-bottom: -25px;
     text-align: center;
+    background: -webkit-linear-gradient(left, #151717 30%, #17c0c2 70%);
+    background: linear-gradient(to right, #151717 30%, #17c0c2 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .categorie_icon img {

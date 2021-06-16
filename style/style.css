@@ -174,7 +174,7 @@ body {
 /* ===== Categorias ====== */
 .secon_homeSec {
     width: 100%;
-    background-color: #191C1D;
+    background-color: #232323;
 }
 
 .secon_homeSec .subtitle {
@@ -315,7 +315,7 @@ body {
 
 
 .card_li {
-    background-color: #191C1D;
+    background-color: #232323;
     padding: 20px 20px 20px 20px;
     border-radius: 8px;
     display: flex;
@@ -367,7 +367,7 @@ body {
 /* Feedbacks  */
 .testimonials {
     padding: 40px 0;
-    background: #191C1D;
+    background: #232323;
     color: #f1f2f3;
     text-align: center;
 }
