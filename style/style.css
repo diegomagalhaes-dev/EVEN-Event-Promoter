@@ -171,7 +171,7 @@ body {
     color: #f1f2f3
 }
 
-/* ===== Categorias ====== */
+/* ===== Categorias ====== */   
 .secon_homeSec {
     width: 100%;
     background-color: #232323;
@@ -321,6 +321,10 @@ body {
     display: flex;
     flex-direction: column;
     text-align: left;
+    transition: 0.3s;
+}
+.card_li:hover{
+    transform: scale(1.04);
 }
 
 
@@ -384,7 +388,7 @@ body {
 }
 
 .row {
-    padding-top: 40px;
+    padding-top: 30px;
     display: flex;
     max-width: 960px;
     flex-wrap: wrap;
@@ -408,6 +412,11 @@ body {
     letter-spacing: .04em;
     font-weight: 400;
     padding: 40px 10px 40px 10px;
+    transition: 0.3s;
+}
+
+.testimonial:hover{
+    transform: scale(1.04);
 }
 
 .testimonial .perfil {
