@@ -3,6 +3,9 @@
     background: #151717;
 }
 
+.categorie_item:nth-child(5) {
+    padding-bottom: 60px;
+}
 
 .categorie_item img {
     width: 100%;
@@ -34,11 +37,11 @@ section:nth-child(4) .container img:nth-child(1) {
 
 
 .categorie_item h2 {
-    font-size: 48px;
+    font-size: 42px;
     text-transform: uppercase;
-    font-weight: 200;
+    font-weight: 300;
     letter-spacing: .2em;
-    line-height: 1em;
+    line-height: 1.2em;
     position: relative;
     top: -150px;
     margin-bottom: -31px;
@@ -49,14 +52,13 @@ section:nth-child(4) .container img:nth-child(1) {
     -webkit-text-fill-color: transparent;
 }
 
-/* section:nth-child(3) h2 {}
 
-section:nth-child(4) h2 {
-    background: -webkit-linear-gradient(left, #E63946 20%, #f1f2f3 10%, #17c0c2 90%);
-    background: linear-gradient(to right, #E63946 10%, #f1f2f3 10%, #17c0c2 90%);
+section:nth-child(5) h2 {
+    background: -webkit-linear-gradient(left, #17c0c2 20%, #f1f2f3 60%);
+    background: linear-gradient(to right, #17c0c2 20%, #f1f2f3 60%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-} */
+}
 
 
 .categorie_icon img {
@@ -101,4 +103,75 @@ section:nth-child(4) h2 {
 
 .inf-categories ul li:nth-child(2) {
     border-bottom: solid 2px #17c0c2;
+}
+
+.form-budget_call {
+    background: #232323;
+    text-align: center; 
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.form-budget_call .internal-subtitle {
+    color: #f1f2f3;
+    text-align: center;
+}
+
+.form-budget_call .internal-subtitle::after {
+    margin: 5px auto;
+}
+
+.note {
+    color: #C4C4C4;
+    font-size: 14px;
+    line-height: 1.3em;
+    letter-spacing: 3%;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+
+.cards_categories li {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 26px;
+    color: #f1f2f3;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 39px;
+    letter-spacing: 0.1em;
+}
+
+.cards_categories li:nth-child(1) {
+    border: solid 2px #17c0c2;
+}
+
+.cards_categories li:nth-child(2) {
+    background: linear-gradient(90.09deg, #17C0C2 0.09%, #E63946 104.35%);
+    padding: 2px;
+    border-radius: 8px;
+}
+
+.cards_categories li:nth-child(2)>div {
+    background: #232323;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 26px;
+    color: #f1f2f3;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 39px;
+    letter-spacing: 0.1em;
+}
+
+.cards_categories li:nth-child(3) {
+    border: solid 2px #E63946;
+}
+
+.form-budget_call img{
+    padding-top: 40px;
 }
