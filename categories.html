@@ -118,7 +118,7 @@
             <li class="grid-1-3">registramos</li>
         </ul>
         <img src="Assets/brace2.svg" alt="">
-        <a href="" class="btn-g">Solicite um Orçamento</a>
+        <div class="btn-g">Solicite um Orçamento</div>
     </section>
     <footer>
         <div class="footer">
@@ -165,45 +165,78 @@
         </div>
     </div>
 
-    <section class="container budget-section">
-        <div class="grid-13">
-            <img class="logo" src="./Assets/logo.png" alt="even">
-            <div class="budget-form_title">
-                <img src="./Assets/asset_form.svg" alt="formulario">
-                <h2>PREENCHA O FORMULÁRIO E ENTRAREMOS EM CONTATO</h2>
-            </div>
-            <form id="budget-form">
-                <div class="budget-form_inputs">
-                    <div class="pair_form">
-                        <label for="name">Nome</label>
-                        <input type="text" id="name">
-                        <label for="name">Sobrenome</label>
-                        <input type="text" id="name"></div>
-                    <div class="pair_form">
-                        <label for="email">E-mail</label>
-                        <input type="text" id="email">
-                        <label for="telefone">Telefone</label>
-                        <input type="text" id="telefone"></div>
-                </div>
-                <div class="budget-form_categories grid-11">
-                    <h4>Categoria</h4>
-                    <input type="checkbox" id="casamento" name="casamento" value="casamento">
-                    <label for="casamento">Casamento</label>
-                    <input type="checkbox" id="formatura" name="formatura" value="formatura">
-                    <label for="casamento">Formatura</label>
-                    <input type="checkbox" id="conferencia" name="conferencia" value="conferencia">
-                    <label for="conferencia">Conferência</label>
-                    <input type="checkbox" id="outro" name="outro" value="outro">
-                    <label for="outro">Outro</label>
-                </div>
+    <div id="form_modal" class="fullscrean">
+        <section class="container budget-section">
+            <button class="cl_popup">x</button>
+            <div class="grid-13">
+                <div class="justify">
+                    <div class="budget-form_title">
+                        <div>
+                            <!-- <img src="./Assets/asset_form.svg" alt="formulario"> -->
+                            <h2>PREENCHA O FORMULÁRIO E ENTRAREMOS EM CONTATO</h2>
+                        </div>
+                    </div>
+                    <form id="budget-form">
+                        <div class="budget-form_inputs">
+                            <div class="pair_form">
+                                <label for="name">Nome*</label>
+                                <input type="text" id="name">
+                                <label for="name">Sobrenome</label>
+                                <input type="text" id="name"></div>
+                            <div class="pair_form">
+                                <label for="email">E-mail</label>
+                                <input type="text" id="email">
+                                <label for="telefone">Telefone*</label>
+                                <input type="text" id="telefone"></div>
+                        </div>
+                        <div class="budget-form_categories grid-11">
+                            <h4>Categoria*</h4>
+                            <div class="budget-form_radio">
+                                <div class="pair_radio">
+                                    <div class="custom_radiobtn">
+                                        <input type="radio" id="casamento" name="categorie" value="casamento">
+                                        <label for="casamento">Casamento</label></div>
+                                    <div class="custom_radiobtn">
+                                        <input type="radio" id="formatura" name="categorie" value="formatura">
+                                        <label for="formatura">Formatura</label></div>
+                                </div>
+                                <div class="pair_radio">
+                                    <div class="custom_radiobtn">
+                                        <input type="radio" id="conferencia" name="categorie" value="conferencia">
+                                        <label for="conferencia">Conferência</label></div>
+                                    <div class="custom_radiobtn">
+                                        <input type="radio" id="outro" name="categorie" value="outro">
+                                        <label for="outro">Outro</label></div>
+                                </div>
 
-                <div class="text_espec">
-                    <label for="espec">Especificações</label>
-                    <textarea id="espec"></textarea>
-                    <button type="submit">enviar</button></div>
-            </form>
-        </div>
-    </section>
+                            </div>
+                        </div>
+
+                        <div class="text_espec">
+                            <label for="espec">Especificações</label>
+                            <textarea id="espec"></textarea>
+                            <button type="submit">enviar</button></div>
+                    </form>
+                </div>
+        </section>
+    </div>
+    </div>
 </body>
+<script>
+    function iniciaModal(modalID) {
+        const modal = document.getElementById(modalID);
+        if (modal) {
+            modal.classList.add('mostrar')
+            modal.addEventListener('click', (e) => {
+                if (e.target.id == modalID || e.target.className == 'cl_popup') {
+                    modal.classList.remove('mostrar')
+                }
+            })
+        }
+    }
+
+    const callModal = document.querySelector('.btn-g');
+    callModal.addEventListener('click', () => iniciaModal('form_modal'));
+</script>
 
 </html>
