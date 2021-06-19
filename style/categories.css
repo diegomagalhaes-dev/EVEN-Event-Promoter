@@ -12,15 +12,15 @@
     height: 250px;
     object-fit: cover;
     object-position: center;
-    box-shadow: 0px 0px 4px .2px #f2f3f3;
 }
 
 .categorie_icon {
     height: 200px;
-    background: url("../Assets/background.jpg");
-    padding-bottom: 250px;
+     background: url("../Assets/background.jpg"); 
+    padding-bottom: 249px;
     padding-right: 40px;
     padding-left: 40px;
+    /* border: solid 2px #17c0c2; */
 }
 
 .categorie_icon img {
@@ -219,7 +219,7 @@ section:nth-child(5) h2 {
 @keyframes modal {
     from {
         opacity: 0;
-        transform: translate3d(0, -60px, 0);
+        transform: translate3d(0, -1000px, 0);
     }
 
     to {
@@ -229,7 +229,7 @@ section:nth-child(5) h2 {
 }
 
 .mostrar .budget-section {
-    animation: modal .3s;
+    animation: modal .4s;
 }
 
 .budget-section {
@@ -290,19 +290,24 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-content: center;
 }
 
 .budget-form_inputs {
     display: flex;
-    padding: 20px;
+    padding: 18px;
     padding-top: 0;
-    width: 100%;
+    align-content: center;
+    align-items: center;
 }
 
 .pair_form {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+}
+
+.pair_form:nth-child(odd){
     padding-right: 20px;
 }
 
@@ -389,8 +394,6 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .text_espec label {
@@ -402,7 +405,7 @@ form {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     text-align: left;
-    padding-left: 10px;
+    padding-left: 38px;
     padding-top: 20px;
     padding-bottom: 8px;
 }
@@ -412,14 +415,16 @@ form {
     background: none;
     border: solid 2px #17c0c2;
     border-radius: 20px;
-    width: 100%;
-    height: 80px;
+    width: 93%;
+    align-content: center;
+    height:80px;
     color: #f1f2f3;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: .08em;
     padding: 10px 15px;
     outline: none;
+    resize: none;
 }
 
 .text_espec button {

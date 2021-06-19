@@ -1,0 +1,33 @@
+.portfolio {
+    background: #232323;
+    padding-bottom: 60px;
+}
+
+.phrases {
+    width: 100%;
+    background: #151717;
+}
+
+.quote_comments {
+    padding: 60px 0;
+    max-width: 420px;
+    margin: 0 auto;
+    color: #f1f2f3;
+}
+
+.quote_comments p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: .02em;
+    font-style: italic;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+
+.quote_comments cite {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: .02em;
+    float: right;
+}
