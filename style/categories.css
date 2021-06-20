@@ -16,7 +16,7 @@
 
 .categorie_icon {
     height: 200px;
-     background: url("../Assets/background.jpg"); 
+    background: url("../Assets/background.jpg");
     padding-bottom: 249px;
     padding-right: 40px;
     padding-left: 40px;
@@ -307,7 +307,7 @@ form {
     align-items: center;
 }
 
-.pair_form:nth-child(odd){
+.pair_form:nth-child(odd) {
     padding-right: 20px;
 }
 
@@ -330,13 +330,11 @@ form {
     border-radius: 40px;
     width: 250px;
     margin-top: 8px;
-    padding-bottom: 10px;
     color: #f1f2f3;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: .08em;
-    padding: 5px;
-    padding-left: 10px;
+    padding: 5px 10px;
     outline: none;
 }
 
@@ -417,7 +415,7 @@ form {
     border-radius: 20px;
     width: 93%;
     align-content: center;
-    height:80px;
+    height: 80px;
     color: #f1f2f3;
     font-size: 14px;
     font-weight: 500;
