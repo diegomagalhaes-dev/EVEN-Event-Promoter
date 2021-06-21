@@ -13,21 +13,26 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container">
-            <a class="grid-4" href="index.html">
-                <img src="Assets/logo.png" alt="even">
-            </a>
-            <nav class="grid-12 menu_header">
-                <ul>
-                    <li><a href="about.html">Sobre</a></li>
-                    <li><a href="categories.html">Categorias</a></li>
-                    <li><a href="collection.html" class="actv_menu">Acervo</a></li>
-                    <li><a href="contact.html">Contato</a></li>
-                </ul>
-            </nav>
-
-    </header>
+    <div class="background-header">
+        <header id="header">
+            <div class="header-space">
+                <a href="index.html">
+                    <img src="Assets/logo.png" alt="even">
+                </a>
+                <nav id="nav">
+                    <button id="btn-mobile">Menu
+                        <span id="hamburger"></span>
+                    </button>
+                    <ul id="menu">
+                        <li><a href="about.html">Sobre</a></li>
+                        <li><a href="categories.html">Categorias</a></li>
+                        <li><a href="collection.html" class="actv_menu">Acervo</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
     <section class="internal-introduction">
         <h2 class="subtitle">acervo</h2>
     </section>
@@ -93,7 +98,7 @@
             <p class="grid-16">EVEN 2021 - Direitos reservados.</p>
         </div>
     </div>
-
+    <script src="responsive_scripts.js"></script>
 </body>
 
 </html>

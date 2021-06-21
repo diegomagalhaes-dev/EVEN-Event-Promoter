@@ -15,3 +15,4 @@ new Glider($simpleCarousel, {
         }
     ]
 })
+

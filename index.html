@@ -17,20 +17,22 @@
     <div class="background">
         <div class="background-header">
             <header id="header">
-                <a href="index.html">
-                    <img src="Assets/logo.png" alt="even">
-                </a>
-                <nav id="nav">
-                    <button id="btn-mobile">Menu
-                        <span id="hamburger"></span>
-                    </button>
-                    <ul id="menu">
-                        <li><a href="about.html">Sobre</a></li>
-                        <li><a href="categories.html">Categorias</a></li>
-                        <li><a href="collection.html">Acervo</a></li>
-                        <li><a href="contact.html">Contato</a></li>
-                    </ul>
-                </nav>
+                <div class="header-space">
+                    <a href="index.html">
+                        <img src="Assets/logo.png" alt="even">
+                    </a>
+                    <nav id="nav">
+                        <button id="btn-mobile">Menu
+                            <span id="hamburger"></span>
+                        </button>
+                        <ul id="menu">
+                            <li><a href="about.html">Sobre</a></li>
+                            <li><a href="categories.html">Categorias</a></li>
+                            <li><a href="collection.html">Acervo</a></li>
+                            <li><a href="contact.html">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </header>
         </div>
         <section class="introduction">
@@ -44,8 +46,8 @@
                     </blockquote>
                     <a class="btn" href="categories.html">Confira</a>
                 </div>
-
                 <img class="img_intro grid-7" src="./Assets/marriage.svg" alt="">
+
             </div>
         </section>
     </div>
@@ -108,7 +110,7 @@
                         acomodado.</p>
                 </li>
             </ul>
-            <img src="./Assets/brace2.svg" alt="">
+            <img id="bracesvg" src="./Assets/brace2.svg" alt="">
             <div class="call">
                 <p>
                     <a href="acervo.html" class="btn-g">sobre nós</a>
@@ -233,17 +235,7 @@
             duration: 100
         })
     </script>
-    <script>
-        const btnMobile = document.getElementById('btn-mobile');
-
-        function toggleMenu(event) {
-            if (event.type === 'touchstart') event.preventDefault();
-            const nav = document.getElementById('nav');
-            nav.classList.toggle('active');
-        }
-        btnMobile.addEventListener('click', toggleMenu);
-        btnMobile.addEventListener('touchstart', toggleMenu);
-    </script>
+    <script src="responsive_scripts.js"> </script>
 </body>
 
 </html>

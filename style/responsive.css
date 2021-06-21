@@ -1,3 +1,38 @@
 @media only screen and (min-width: 768px) and (max-width: 959px) {}
 
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+    .introduction {
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .introduction h1 {
+        font-size: 46px;
+        text-align: center;
+    }
+
+    .introduction .container {
+        padding-top: 200px;
+        display: block;
+    }
+
+    .phrase {
+        margin-top: 40px;
+    }
+
+    .phrase blockquote {
+        margin-top: 0px;
+    }
+
+    .btn {
+        margin-top: 0px;
+    }
+
+    .img_intro {
+        position: absolute;
+        top: 40px;
+        padding-bottom: 50px;
+        width: 80%;
+        left: 10%;
+    }
+}
