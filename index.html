@@ -8,27 +8,31 @@
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/grid.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
     <script src="https://kit.fontawesome.com/7f2500a3fb.js" crossorigin="anonymous"></script>
     <title>even</title>
 </head>
 
 <body>
     <div class="background">
-        <header class="header">
-            <div class="container">
-                <a class="grid-4" href="index.html">
+        <div class="background-header">
+            <header id="header">
+                <a href="index.html">
                     <img src="Assets/logo.png" alt="even">
                 </a>
-                <nav class="grid-12 menu_header">
-                    <ul>
+                <nav id="nav">
+                    <button id="btn-mobile">Menu
+                        <span id="hamburger"></span>
+                    </button>
+                    <ul id="menu">
                         <li><a href="about.html">Sobre</a></li>
                         <li><a href="categories.html">Categorias</a></li>
                         <li><a href="collection.html">Acervo</a></li>
                         <li><a href="contact.html">Contato</a></li>
                     </ul>
                 </nav>
-            </div>
-        </header>
+            </header>
+        </div>
         <section class="introduction">
             <div class="container">
                 <div class="phrase">
@@ -228,6 +232,17 @@
         new Vivus('cog2', {
             duration: 100
         })
+    </script>
+    <script>
+        const btnMobile = document.getElementById('btn-mobile');
+
+        function toggleMenu(event) {
+            if (event.type === 'touchstart') event.preventDefault();
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+        btnMobile.addEventListener('click', toggleMenu);
+        btnMobile.addEventListener('touchstart', toggleMenu);
     </script>
 </body>
 
