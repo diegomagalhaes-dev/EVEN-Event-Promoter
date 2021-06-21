@@ -284,6 +284,7 @@ body {
     min-height: 280px;
     background-size: cover;
     background-position: bottom;
+    max-width: 100%;
 }
 
 .img_previewPort:first-child {
@@ -371,14 +372,14 @@ body {
 }
 
 /* Feedbacks  */
-.testimonials {
+.home-page_cards {
     padding: 40px 0;
     background: #232323;
     color: #f1f2f3;
     text-align: center;
 }
 
-.testimonials .subtitle {
+.home-page_cards .subtitle {
     color: #f1f2f3
 }
 
@@ -465,10 +466,18 @@ body {
         flex: 100%;
         max-width: 80%;
     }
+    .about{
+        flex: 100%;
+        max-width: 80%;
+    }
 }
 
 @media screen and (max-width:600px) {
     .col {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .about{
         flex: 100%;
         max-width: 100%;
     }
