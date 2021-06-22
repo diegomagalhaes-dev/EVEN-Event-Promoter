@@ -38,7 +38,11 @@
         max-width: 80%;
         left: 10%;
     }
-    .about-cards{
+
+    .about-cards {
         flex-direction: column;
     }
+    .internal-introduction{
+       padding-top: 40px;
+   } 
 }
