@@ -106,7 +106,11 @@ body {
     padding-left: 10px;
     padding-right: 8px;
 }
-
+.header-space a img{
+    max-width: 112px;
+    max-height: 32px;
+    padding-bottom: 2px;
+}
 #menu {
     padding-top: 3px;
     display: flex;
@@ -423,6 +427,10 @@ body {
     align-items: center;
 }
 
+.about-cards {
+    display: flex;
+}
+
 .about img {
     margin-top: 40px;
 }
@@ -436,9 +444,9 @@ body {
     background-color: #232323;
     padding: 20px 20px 20px 20px;
     border-radius: 8px;
+    text-align: left;
     display: flex;
     flex-direction: column;
-    text-align: left;
     transition: 0.3s;
 }
 
@@ -455,8 +463,8 @@ body {
 
 #bracesvg {
     max-width: 100%;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .card_li:nth-child(1) h3::after {

@@ -38,4 +38,7 @@
         max-width: 80%;
         left: 10%;
     }
+    .about-cards{
+        flex-direction: column;
+    }
 }
