@@ -226,11 +226,11 @@ body {
 
 /* .menu_header ul li a:hover {
     color: #17C0C2;
-}
+}*/
 
-.menu_header ul li a.actv_menu {
+#menu li a.actv_menu {
     color: #17C0C2;
-} */
+}
 
 .introduction {
     width: 100%;
@@ -453,11 +453,12 @@ body {
     font-size: 18px;
 }
 
-#bracesvg{
+#bracesvg {
     max-width: 100%;
     padding-right: 40px;
     padding-left: 40px;
 }
+
 .card_li:nth-child(1) h3::after {
     content: '';
     display: block;

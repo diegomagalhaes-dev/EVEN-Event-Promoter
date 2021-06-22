@@ -7,7 +7,7 @@
     }
 
     .introduction h1 {
-        font-size: 46px;
+        font-size: 42px;
         text-align: center;
     }
 
@@ -25,14 +25,17 @@
     }
 
     .btn {
+        max-width: 200px;
+        font-size: 18px;
+        padding: 10px 20px 10px 20px;
+        text-align: center;
         margin-top: 0px;
     }
 
     .img_intro {
         position: absolute;
-        top: 40px;
-        padding-bottom: 50px;
-        width: 80%;
+        top: 13%;
+        max-width: 80%;
         left: 10%;
     }
 }
