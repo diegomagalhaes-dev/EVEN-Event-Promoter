@@ -81,7 +81,7 @@ body {
 
 .background-header {
     background: #19314A url("../Assets/background.jpg") no-repeat;
-    width: 100%;
+    width: 100vw;
     height: 60px;
     top: 0;
     z-index: 11;
@@ -103,14 +103,16 @@ body {
     margin: 0 auto;
     padding: 0px;
     justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 8px;
+    padding-left: 3px;
+    padding-right: 15px;
 }
-.header-space a img{
+
+.header-space a img {
     max-width: 112px;
     max-height: 32px;
     padding-bottom: 2px;
 }
+
 #menu {
     padding-top: 3px;
     display: flex;
@@ -389,7 +391,6 @@ body {
 }
 
 .portfolio .call {
-    margin-top: 40px;
     margin-bottom: 40px;
 }
 
@@ -670,6 +671,7 @@ body {
     color: #f1f2f3;
     background: url("../Assets/background.jpg");
     font-size: 14px;
+    box-sizing: border-box;
     font-weight: 400;
     padding: 5px;
     letter-spacing: .08em;
