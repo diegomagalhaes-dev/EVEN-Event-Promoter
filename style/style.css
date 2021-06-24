@@ -48,7 +48,7 @@ body {
 }
 
 .btn {
-    font-size: 1.3em;
+    font-size: 16px;
     margin-top: 20px;
     color: #19314A;
     font-weight: 600;
@@ -75,7 +75,7 @@ body {
 
 .background {
     height: 100vh;
-    background: #19314A url("../Assets/background.jpg") fixed;
+    background: #19314A url("../Assets/background.jpg");
     z-index: 10;
 }
 
@@ -123,7 +123,7 @@ body {
     color: #f1f2f3;
     font-weight: 700;
     letter-spacing: .08em;
-    font-size: 14px;
+    font-size: 24px;
     line-height: 20px;
 
 }
@@ -140,17 +140,25 @@ body {
 
 
 @media (max-width: 620px) {
+    #header .header-space {
+        padding-right: 0;
+        align-items: center;
+    }
+
     #menu {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         visibility: hidden;
         position: absolute;
         width: 100%;
-        top: 60px;
+        top: 0;
         right: 0px;
         background: #151717;
         height: 0px;
         z-index: 33333;
-        transition: .5s;
+        transition: .7s;
         overflow-y: hidden;
     }
 
@@ -159,23 +167,22 @@ body {
     }
 
     #nav.active #menu {
-        height: calc(100vh - 60px);
+        height: 100vh;
         visibility: visible;
     }
 
     #menu li {
         padding: 1rem 0;
-        margin: 0 1rem;
-        border-bottom: 2px solid #232323;
     }
 
     #btn-mobile {
+        position: relative;
         display: flex;
-        padding: .3rem 1rem;
         font-size: 1rem;
         border: none;
         background: none;
         cursor: pointer;
+        z-index: 33334;
     }
 
     #hamburger {
