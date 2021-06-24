@@ -2,7 +2,19 @@
     .categorie_item {
         width: 100%;
     }
-    
+
+    .categorie_icon img {
+        margin-top: 30%;
+    }
+
+    /* .cards_categories li {
+        font-size: 22px;
+    }
+
+    .cards_categories li:nth-child(2)>div {
+        font-size: 22px;
+    } */
+
     .inf-categories p {
         color: #f1f2f3;
         font-size: 14px;

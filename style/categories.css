@@ -25,6 +25,7 @@
 
 .categorie_icon img {
     box-shadow: none;
+    margin-top: 10%;
 }
 
 .container div:nth-child(1) img {
@@ -114,6 +115,7 @@ section:nth-child(5) h2 {
     text-align: center;
     align-items: center;
     padding-bottom: 40px;
+    width: 100%;
 }
 
 .form-budget_call .internal-subtitle {
@@ -134,8 +136,16 @@ section:nth-child(5) h2 {
     padding-bottom: 20px;
 }
 
-
+.cards_categories {
+    display:flex;
+    max-width: 960px;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
 .cards_categories li {
+    display: flex;
+    max-width: 33.33%;
     padding: 10px 20px;
     border-radius: 8px;
     font-size: 26px;
