@@ -254,7 +254,12 @@ section:nth-child(5) h2 {
     border: solid 4px #17c0c2;
     border-radius: 8px;
     position: relative;
-    
+
+}
+
+.budget-section .grid-13 {
+    max-height: 100%;
+    overflow: scroll;
 }
 
 .justify {
