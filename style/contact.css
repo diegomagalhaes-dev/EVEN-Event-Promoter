@@ -103,3 +103,8 @@
     background: #232323;
     padding-bottom: 60px;
 }
+
+.contact-map div img {
+    max-width: 960px;
+    width: 100%;
+}
