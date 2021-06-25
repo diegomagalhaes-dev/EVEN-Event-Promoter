@@ -21,8 +21,7 @@
                     <img src="Assets/logo_EVEN_BIG.svg" alt="even">
                 </a>
                 <nav id="nav">
-                    <button id="btn-mobile">Menu
-                        <span id="hamburger"></span>
+                    <button id="btn-mobile"><span id="hamburger"></span>
                     </button>
                     <ul id="menu">
                         <li><a href="about.html">Sobre</a></li>
@@ -123,7 +122,9 @@
             </li>
             <li>registramos</li>
         </ul>
-        <img src="Assets/brace2.svg" alt="">
+        <div class="container">
+            <img class="bracesvg" src="Assets/brace2.svg" alt="">
+        </div>
         <div class="btn-g">Solicite um Orçamento</div>
     </section>
     <footer>
@@ -220,28 +221,29 @@
                         <div class="text_espec">
                             <label for="espec">Especificações</label>
                             <textarea id="espec"></textarea>
-                            <button class="btn-g"type="submit">enviar</button></div>
+                            <button class="btn-g" type="submit">enviar</button></div>
                     </form>
                 </div>
         </section>
     </div>
     </div>
-</body>
-<script>
-    function iniciaModal(modalID) {
-        const modal = document.getElementById(modalID);
-        if (modal) {
-            modal.classList.add('mostrar')
-            modal.addEventListener('click', (e) => {
-                if (e.target.id == modalID || e.target.className == 'cl_popup') {
-                    modal.classList.remove('mostrar')
-                }
-            })
+    <script>
+        function iniciaModal(modalID) {
+            const modal = document.getElementById(modalID);
+            if (modal) {
+                modal.classList.add('mostrar')
+                modal.addEventListener('click', (e) => {
+                    if (e.target.id == modalID || e.target.className == 'cl_popup') {
+                        modal.classList.remove('mostrar')
+                    }
+                })
+            }
         }
-    }
 
-    const callModal = document.querySelector('.btn-g');
-    callModal.addEventListener('click', () => iniciaModal('form_modal'));
-</script>
-<script src="responsive_scripts.js"></script>
+        const callModal = document.querySelector('.btn-g');
+        callModal.addEventListener('click', () => iniciaModal('form_modal'));
+    </script>
+    <script src="responsive_scripts.js"> </script>
+</body>
+
 </html>

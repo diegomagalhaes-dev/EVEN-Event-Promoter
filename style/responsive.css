@@ -4,16 +4,12 @@
     }
 
     .categorie_icon img {
-        margin-top: 30%;
-    }
-
-    /* .cards_categories li {
-        font-size: 22px;
+        margin-top: 35%;
     }
 
     .cards_categories li:nth-child(2)>div {
         font-size: 22px;
-    } */
+    }
 
     .inf-categories p {
         color: #f1f2f3;
@@ -36,6 +32,31 @@
         height: 49px;
         text-align: center;
         padding-top: 16px;
+    }
+
+    .cards_categories li {
+        font-size: 20px;
+    }
+
+    .cards_categories li:nth-child(2) div {
+        font-size: 20px;
+    }
+
+    .budget-section {
+        max-width: 80vw;
+    }
+
+    .budget-form {
+        width: 100%;
+    }
+
+    .justify {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .text_espec {
+        width: 92%;
     }
 }
 
@@ -124,16 +145,95 @@
 
     .categorie_item h2 {
         font-size: 24px;
-        text-transform: uppercase;
-        font-weight: 300;
-        letter-spacing: .2em;
-        line-height: 1.2em;
-        position: relative;
-        top: -125px;
-        text-align: center;
-        background: -webkit-linear-gradient(left, #151717 30%, #17c0c2 70%);
-        background: linear-gradient(to right, #151717 30%, #17c0c2 70%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        top: -110px;
+    }
+
+    .inf-categories p {
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .inf-categories ul li {
+        width: 150px;
+        font-size: 12px;
+    }
+
+    .cards_categories {
+        flex-direction: column;
+    }
+
+    .cards_categories li {
+        max-width: 100%;
+    }
+
+    .budget-section {
+        width: 90vw;
+        height: 90vh;
+    }
+
+    .justify {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .budget-form_title div {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .budget-form_title h2 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .budget-form_inputs {
+        flex-direction: column;
+    }
+
+    .pair_form:nth-child(odd) {
+        padding-right: 0;
+    }
+
+    .pair_form label {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .text_espec label {
+        padding-top: 0;
+    }
+
+    .text_espec textarea {
+        max-width: 93%;
+        width: 85%;
+    }
+
+    .pair_radio:nth-of-type(2) {
+        padding-right: 0;
+    }
+
+    .budget-section {
+        border: solid 2px #17C0C2;
+    }
+
+    .cl_popup {
+        position: absolute;
+        top: -15px;
+        right: -10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: solid 2px #17C0C2;
+        background: #E63946;
+        color: #f1f2f3;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .text_espec button {
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: .08em;
     }
 }
