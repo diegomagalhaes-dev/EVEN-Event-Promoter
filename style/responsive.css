@@ -168,7 +168,11 @@
 
     .budget-section {
         width: 90vw;
-        height: 90vh;
+        max-height: 95vh;
+    }
+
+    .budget-section grid-13{
+        overflow: scroll;
     }
 
     .justify {
@@ -235,5 +239,10 @@
         font-size: 14px;
         font-weight: 700;
         letter-spacing: .08em;
+        margin-bottom: 0px;
+    }
+
+    .contact-form{
+        padding-right: 0px;
     }
 }

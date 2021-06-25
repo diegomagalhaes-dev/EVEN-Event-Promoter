@@ -253,7 +253,6 @@ section:nth-child(5) h2 {
     text-align: center;
     border: solid 4px #17c0c2;
     border-radius: 8px;
-    max-height: 80vh;
     position: relative;
     
 }
