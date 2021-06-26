@@ -31,3 +31,30 @@
     letter-spacing: .02em;
     float: right;
 }
+
+.portfolio-item li img {
+    width: 100%;
+    max-height: 280px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.portfolio-item li:last-child {
+    margin-top: 17px;
+}
+
+#slider {
+    position: relative;
+    background: #232323;
+}
+
+#slider .portfolio{
+    position: relative;
+    opacity: 0;
+}
+
+#slider li .portfolio.active {
+    position: absolute;
+    opacity: 1;
+}

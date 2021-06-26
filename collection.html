@@ -33,27 +33,62 @@
             </div>
         </header>
     </div>
+
     <section class="internal-introduction">
         <h2 class="subtitle">acervo</h2>
     </section>
     <section class="phrases">
         <div class="container">
             <blockquote class="quote_comments">
-                <p>"A Even é excelente no que faz, tudo que combinamos foi realizado e tivemos suporte o tempo inteiro.
+                <p>"A Even é excelente no que faz, tudo que combinamos foi realizado e tivemos suporte o tempo
+                    inteiro.
                     Recomendo!"</p>
                 <cite>Fulano Souza</cite>
             </blockquote>
         </div>
     </section>
-    <section class="portfolio">
-        <div class="container">
-            <ul class="items_portfolio">
-                <li class="grid-8 img_previewPort"></li>
-                <li class="grid-8 img_previewPort"></li>
-                <li class="grid-16 img_previewPort"></li>
-            </ul>
-        </div>
-    </section>
+    <ul id="slider">
+        <li>
+            <section class="portfolio active">
+                <div class="container">
+                    <ul class="portfolio-item">
+                        <li class="grid-8">
+                            <img src="https://images.unsplash.com/flagged/photo-1620830102229-9db5c00d4afc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                                alt="por1">
+                        </li>
+                        <li class="grid-8">
+                            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80"
+                                alt="">
+                        </li>
+                        <li class="grid-16">
+                            <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                                alt="">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </li>
+        <li>
+            <section class="portfolio">
+                <div class="container">
+                    <ul class="portfolio-item">
+                        <li class="grid-8">
+                            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                                alt="por1">
+                        </li>
+                        <li class="grid-8">
+                            <img src="https://images.unsplash.com/photo-1591115765373-5207764f72e7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                                alt="">
+                        </li>
+                        <li class="grid-16">
+                            <img src="https://images.unsplash.com/photo-1612936008632-9b6dafe9c07a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                                alt="">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </li>
+    </ul>
     <footer>
         <div class="footer">
             <div class="container">
@@ -99,6 +134,28 @@
         </div>
     </div>
     <script src="responsive_scripts.js"> </script>
+
+    <script>
+        const grid = document.querySelectorAll("#slider .portfolio");
+        let set = 0;
+        let qtdGrids = grid.length
+
+
+        function active() {
+            grid[1].style.opacity = set;
+            set ++;
+            if (set > 1) {
+                set = 0;
+            }
+        }
+
+
+        function start() {
+            setInterval(() => active(), 6000);
+        }
+
+        window.addEventListener("load", start())
+    </script>
 </body>
 
 </html>

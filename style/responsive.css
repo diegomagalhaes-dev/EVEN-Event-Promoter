@@ -171,7 +171,7 @@
         max-height: 95vh;
     }
 
-    .budget-section grid-13{
+    .budget-section grid-13 {
         overflow: scroll;
     }
 
@@ -242,7 +242,12 @@
         margin-bottom: 0px;
     }
 
-    .contact-form{
+    .contact-form {
         padding-right: 0px;
+    }
+
+    .budget-section .grid-13 {
+        max-height: 100%;
+        overflow: scroll;
     }
 }

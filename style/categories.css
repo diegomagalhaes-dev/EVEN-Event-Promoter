@@ -257,11 +257,6 @@ section:nth-child(5) h2 {
 
 }
 
-.budget-section .grid-13 {
-    max-height: 100%;
-    overflow: scroll;
-}
-
 .justify {
     padding-left: 100px;
     padding-right: 100px;
