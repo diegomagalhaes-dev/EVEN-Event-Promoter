@@ -37,27 +37,20 @@
     <section class="internal-introduction">
         <h2 class="subtitle">acervo</h2>
     </section>
+    <div class="sliderPhrases">
+        <blockquote class="quote_comments active">
+            <p>"A Even é excelente no que faz, tudo que combinamos foi realizado e tivemos suporte o tempo
+                inteiro.
+                Recomendo!"</p>
+            <cite>Fulano Souza</cite>
+        </blockquote>
+        <blockquote class="quote_comments">
+            <p>"O evento foi um sucesso! Cordialidade e compromisso resumem o que esta empresa deseja entregar aos seus clientes. Com certeza fez meu sonho se tornar realidade"</p>
+            <cite>Leandro Espetos</cite>
+        </blockquote>
+    </div>
 
-    <section class="phrases">
-        <div class="container">
-            <blockquote class="quote_comments">
-                <p>"A Even é excelente no que faz, tudo que combinamos foi realizado e tivemos suporte o tempo
-                    inteiro.
-                    Recomendo!"</p>
-                <cite>Fulano Souza</cite>
-            </blockquote>
-        </div>
-    </section>
-    <section class="phrases">
-        <div class="container">
-            <blockquote class="quote_comments">
-                <p>"Comentario 2"</p>
-                <cite>Fulano 2</cite>
-            </blockquote>
-        </div>
-    </section>
-
-    <ul id="slider">
+    <ul class="slider">
         <li>
             <section class="portfolio active">
 
@@ -147,10 +140,21 @@
     <script src="responsive_scripts.js"> </script>
 
     <script>
-        const grid = document.querySelectorAll("#slider .portfolio");
+        const grid = document.querySelectorAll(".slider .portfolio");
+        const phrase = document.querySelectorAll(".sliderPhrases .quote_comments");
         let set = 0;
+        let phraseIndex = 0;
+        const maxIndex = phrase.length;
         let qtdGrids = grid.length
 
+        console.log(phrase[phraseIndex]);
+
+        function active2() {
+            phrase[phraseIndex].classList.remove("active");
+            phraseIndex++;
+            if (phraseIndex >= maxIndex) phraseIndex = 0;
+            phrase[phraseIndex].classList.add("active");
+        }
 
         function active() {
             grid[1].style.opacity = set;
@@ -162,7 +166,10 @@
 
 
         function start() {
-            setInterval(() => active(), 6000);
+            setInterval(() => {
+                active();
+                active2()
+            }, 4000);
         }
 
         window.addEventListener("load", start())

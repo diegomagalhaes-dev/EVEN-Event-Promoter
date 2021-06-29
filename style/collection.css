@@ -3,16 +3,37 @@
     padding-bottom: 60px;
 }
 
-.phrases {                          
-    width: 100%;
+.sliderPhrases {
+    height: 200px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
     background: #151717;
 }
 
+
 .quote_comments {
-    padding: 60px 0;
-    max-width: 420px;
+    height: 90%;
+    max-width: 80vw;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background: #151717;
+    max-height: 100%;
     margin: 0 auto;
     color: #f1f2f3;
+    opacity: 0;
+    position: absolute;
+}
+
+.quote_comments.active {
+    opacity: 1;
 }
 
 .quote_comments p {
@@ -29,7 +50,7 @@
     font-size: 18px;
     font-weight: 600;
     letter-spacing: .02em;
-    float: right;
+    text-align: right;
 }
 
 .portfolio-item li img {
@@ -44,17 +65,17 @@
     margin-top: 17px;
 }
 
-#slider {
+.slider {
     position: relative;
     background: #232323;
 }
 
-#slider .portfolio{
+.slider .portfolio {
     position: relative;
     opacity: 0;
 }
 
-#slider li .portfolio.active {
+.slider li .portfolio.active {
     position: absolute;
     opacity: 1;
 }
