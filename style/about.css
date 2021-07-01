@@ -1,3 +1,12 @@
+.glider-dot.active {
+    background: #17C0C2;
+}
+
+.glider-dot{
+    color: #f1f2f3;
+    background: #f1f2f3;
+}
+
 .info {
     background: #151717;
     padding-top: 40px;
