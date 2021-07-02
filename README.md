@@ -5,7 +5,7 @@
 </h1>
 
 <p align="center">
-  <img alt="W3C Vallidation" src="https://img.shields.io/w3c-validation/html?color=rgb%2823%2C%20192%2C%20194%29&targetUrl=https%3A%2F%2Feven-promotora.netlify.app">
+  <img alt="W3C Vallidation" src="https://img.shields.io/w3c-validation/default?color=rgb%2823%2C%20192%2C%20194%29&targetUrl=https%3A%2F%2Feven-promotora.netlify.app%2F">
 
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/diegomagalhaes-dev/EVEN-Event-Promoter?color=rgb%2823%2C%20192%2C%20194%29&logo=rgb%2823%2C%20192%2C%20194%29">
