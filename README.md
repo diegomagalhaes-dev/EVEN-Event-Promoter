@@ -25,7 +25,7 @@
 <br>
 
 <div align="center">
-<a target="_blank" href="https://even-promotora.netlify.app/">
+<a href="https://even-promotora.netlify.app/" target="_blank">
   <img title="Navegue até o site!" src="./Assets/demoNetlify.png">
   </a>
   <br><br>
