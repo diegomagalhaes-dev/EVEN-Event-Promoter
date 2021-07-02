@@ -36,10 +36,10 @@
 </div>
 <br><br>
 <h2 id="sobre">🔎 Sobre o Projeto</h2>
-Projeto Front-end Web de um site institucional para empresa de promoção de eventos. Todo o layout foi pensado com base em critérios de UX (User Experience) e desenvolvido seguindo as melhores práticas de SEO para um projeto do tipo.
+Projeto Front-end Web de um site institucional para empresas de promoção de eventos. Todo o layout foi pensado com base em critérios de UX (User Experience) e desenvolvido seguindo as melhores práticas de SEO para um projeto do tipo.
 
 <h2 id="license"> :memo: Licença</h2>
 
 Esse projeto está sob  a Licença MIT. Acesse [LICENSE](https://github.com/diegomagalhaes-dev/EVEN-Event-Promoter/blob/master/LICENSE) para mais informações.
 <hr>
-Feito com ♥ por Diêgo Magalhães :wave: [Fale comigo!](https://www.linkedin.com/in/magalhaesdiego/)
+Feito com ♥ por Diêgo Magalhães :wave: <a href="https://www.linkedin.com/in/magalhaesdiego/">Fale comigo!</a>.
