@@ -9,10 +9,7 @@
 
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/diegomagalhaes-dev/EVEN-Event-Promoter?color=rgb%2823%2C%20192%2C%20194%29&logo=rgb%2823%2C%20192%2C%20194%29">
-  </a>
-
  
-
   <img alt="GitHub" src="https://img.shields.io/apm/l/vim-mode?color=rgb%2823%2C%20192%2C%20194%29">
 </p>
 
@@ -23,8 +20,16 @@
   <a href="#sobre">Sobre o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-license">Licença</a>
 </p>
-<br><br>
+<br>
+ 
+<br>
+
 <div align="center">
+<a href="https://even-promotora.netlify.app/">
+  <img src="./Assets/demoNetlify.png">
+  
+  </a>
+  <br><br>
 <h3>Large Size version 🖥️</h3>
     <img src="./Assets/evenLapTopImagePreview (1).png">
     <h3>Mobile version 📱 </h3>
