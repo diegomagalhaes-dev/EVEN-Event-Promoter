@@ -8,6 +8,20 @@ body {
     font-family: 'Montserrat', 'Open-Sans', sans-serif;
 }
 
+html::-webkit-scrollbar {
+    background: #17C0C2;
+    width: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: rgba(230, 57, 70, .90);
+    /* transition: opacity .5s linear; */
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background: rgba(230, 57, 70, .60)
+}
+
 .subtitle {
     font-weight: 700;
     font-size: 28px;
@@ -173,10 +187,12 @@ body {
     #menu li {
         padding: 1rem 0;
     }
+
     #menu li a {
         font-size: 22px;
         font-weight: 500;
     }
+
     #btn-mobile {
         position: relative;
         display: flex;
