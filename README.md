@@ -32,6 +32,12 @@
 <h2 id="sobre">🔎 Sobre o Projeto</h2>
 Projeto Front-end Web de um site institucional para empresas de promoção de eventos. Todo o layout foi pensado com base em critérios de UX (User Experience) e desenvolvido seguindo as melhores práticas de SEO para um projeto do tipo.
 
+<h2 id="tecnologias">⚙️ Tecnologias utilizadas</h2>
+
+-  Figma
+-  HTML5
+-  CSS3
+-  Java Script
 <h2 id="license"> :memo: Licença</h2>
 
 Esse projeto está sob  a Licença MIT. Acesse [LICENSE](https://github.com/diegomagalhaes-dev/EVEN-Event-Promoter/blob/master/LICENSE) para mais informações.
