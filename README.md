@@ -24,10 +24,9 @@
   <img title="Navegue até o site!" src="./Assets/demoNetlify.png">
   </a>
   <br><br>
-<h3>Large Size version 🖥️</h3>
-    <img src="./Assets/evenLapTopImagePreview (1).png">
-    <h3>Mobile version 📱 </h3>
-   <img src="./Assets/evenMobileImagePreview.png">
+    <img src="./Assets/capa1.png">
+<br> <br>
+   <img src="./Assets/capa2.png">
 </div>
 <br><br>
 <h2 id="sobre">🔎 Sobre o Projeto</h2>
