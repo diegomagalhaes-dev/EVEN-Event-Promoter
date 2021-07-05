@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Even - Promota de Eventos" />
@@ -27,7 +27,7 @@
         <header id="header">
             <div class="header-space">
                 <a href="index.html">
-                    <img src="Assets/logo_EVEN_BIG.svg" alt="Logo Even">
+                    <img src="../Assets/logo_EVEN_BIG.svg" alt="Logo Even">
                 </a>
                 <nav id="nav">
                     <button id="btn-mobile"><span id="hamburger"></span>
@@ -118,15 +118,15 @@
                     <h3>Redes Sociais</h3>
                     <ul>
                         <li>
-                            <a href="https://facebook.com" target="_blank"><img src="./Assets/facebook.svg"
+                            <a href="https://facebook.com" target="_blank"><img src="../Assets/facebook.svg"
                                     alt="facebook even"></a>
                         </li>
                         <li>
-                            <a href="https://instagram.com" target="_blank"><img src="./Assets/instagram.svg"
+                            <a href="https://instagram.com" target="_blank"><img src="../Assets/instagram.svg"
                                     alt="instagram even"></a>
                         </li>
                         <li>
-                            <a href="https://web.telegram.org/" target="_blank"><img src="./Assets/telegram.svg"
+                            <a href="https://web.telegram.org/" target="_blank"><img src="../Assets/telegram.svg"
                                     alt="telegram  even"></a>
                         </li>
                     </ul>
@@ -142,8 +142,24 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
-    <script src="./scripts.js"></script>
-    <script src="responsive_scripts.js"></script>
+    <script>
+        const $simpleCarousel = document.querySelector(".js-carousel");
+        new Glider($simpleCarousel, {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            draggable: true,
+            dots: ".js-carousel--dots",
+            scrollLock: true,
+            responsive: [{
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToShow: 1
+                }
+            }]
+        })
+    </script>
+    <script src="../scripts/scripts.js"></script>
 </body>
 
 </html>

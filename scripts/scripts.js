@@ -8,8 +8,6 @@ function toggleMenu(event) {
     nav.classList.toggle('active');
 }
 
-
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
-// document.body.style.overflow = aux ? "hidden" : "initial"
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Even - Promota de Eventos" />
@@ -27,7 +27,7 @@
         <header id="header">
             <div class="header-space">
                 <a href="index.html">
-                    <img src="Assets/logo_EVEN_BIG.svg" alt="Logo Even">
+                    <img src="../Assets/logo_EVEN_BIG.svg" alt="Logo Even">
                 </a>
                 <nav id="nav">
                     <button id="btn-mobile"><span id="hamburger"></span>
@@ -49,11 +49,11 @@
     <section class="categorie_item">
         <div class="container">
             <div class="grid-11">
-                <img src="./Assets/marriage2.jpg" alt="Casamentos">
+                <img src="../Assets/marriage2.jpg" alt="Casamentos">
                 <h2>Casamentos</h2>
             </div>
-            <div class="grid-5 categorie_icon"><img src="./Assets/wedding_ring.svg" alt="Icone de Casamentos"></div>
-            <div class="grid-8"><img src="./Assets/wedding.jpg" alt="Casamento 1"></div>
+            <div class="grid-5 categorie_icon"><img src="../Assets/wedding_ring.svg" alt="Icone de Casamentos"></div>
+            <div class="grid-8"><img src="../Assets/wedding.jpg" alt="Casamento 1"></div>
             <div class="grid-8 inf-categories">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis rerum porro blanditiis
                     dignissimos debitis sapiente illo non obcaecati, ab, voluptas error aliquam?</p>
@@ -74,7 +74,7 @@
                     alt="Formaturas">
                 <h2>Formaturas</h2>
             </div>
-            <div class="grid-5 categorie_icon"><img src="./Assets/graduation.svg" alt="Icone de Formaturas"></div>
+            <div class="grid-5 categorie_icon"><img src="../Assets/graduation.svg" alt="Icone de Formaturas"></div>
 
             <div class="grid-8"><img
                     src="https://images.unsplash.com/photo-1561409958-c0e6ad782a81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
@@ -99,7 +99,7 @@
                     alt="Conferências">
                 <h2>Conferências</h2>
             </div>
-            <div class="grid-5 categorie_icon"><img src="./Assets/metting.svg" alt="Iconde de Conferências"></div>
+            <div class="grid-5 categorie_icon"><img src="../Assets/metting.svg" alt="Iconde de Conferências"></div>
             <div class="grid-8"><img
                     src="https://images.unsplash.com/photo-1560523160-754a9e25c68f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80"
                     alt="Conferência 1"></div>
@@ -132,7 +132,7 @@
             <li>registramos</li>
         </ul>
         <div class="container">
-            <img class="bracesvg" src="Assets/brace2.svg" alt="Chamada para solicitar Orçamento">
+            <img class="bracesvg" src="../Assets/brace2.svg" alt="Chamada para solicitar Orçamento">
         </div>
         <div class="btn-g">Solicite um Orçamento</div>
     </section>
@@ -158,15 +158,15 @@
                     <h3>Redes Sociais</h3>
                     <ul>
                         <li>
-                            <a href="https://facebook.com" target="_blank"><img src="./Assets/facebook.svg"
+                            <a href="https://facebook.com" target="_blank"><img src="../Assets/facebook.svg"
                                     alt="facebook even"></a>
                         </li>
                         <li>
-                            <a href="https://instagram.com" target="_blank"><img src="./Assets/instagram.svg"
+                            <a href="https://instagram.com" target="_blank"><img src="../Assets/instagram.svg"
                                     alt="instagram even"></a>
                         </li>
                         <li>
-                            <a href="https://web.telegram.org/" target="_blank"><img src="./Assets/telegram.svg"
+                            <a href="https://web.telegram.org/" target="_blank"><img src="../Assets/telegram.svg"
                                     alt="telegram  even"></a>
                         </li>
                     </ul>
@@ -236,23 +236,8 @@
             </div>
         </div>
     </section>
-    <script>
-        function iniciaModal(modalID) {
-            const modal = document.getElementById(modalID);
-            if (modal) {
-                modal.classList.add('mostrar')
-                modal.addEventListener('click', (e) => {
-                    if (e.target.id == modalID || e.target.className == 'cl_popup') {
-                        modal.classList.remove('mostrar')
-                    }
-                })
-            }
-        }
-
-        const callModal = document.querySelector('.btn-g');
-        callModal.addEventListener('click', () => iniciaModal('form_modal'));
-    </script>
-    <script src="responsive_scripts.js"> </script>
+    <script src="../scripts/scripts.js"></script>
+    <script src="../scripts/modal.js"></script>
 </body>
 
 </html>

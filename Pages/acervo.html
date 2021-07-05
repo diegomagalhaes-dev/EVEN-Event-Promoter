@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Even - Promota de Eventos" />
@@ -27,7 +27,7 @@
         <header id="header">
             <div class="header-space">
                 <a href="index.html">
-                    <img src="Assets/logo_EVEN_BIG.svg" alt="Logo Even">
+                    <img src="../Assets/logo_EVEN_BIG.svg" alt="Logo Even">
                 </a>
                 <nav id="nav">
                     <button id="btn-mobile"><span id="hamburger"></span>
@@ -130,15 +130,15 @@
                     <h3>Redes Sociais</h3>
                     <ul>
                         <li>
-                            <a href="https://facebook.com" target="_blank"><img src="./Assets/facebook.svg"
+                            <a href="https://facebook.com" target="_blank"><img src="../Assets/facebook.svg"
                                     alt="facebook even"></a>
                         </li>
                         <li>
-                            <a href="https://instagram.com" target="_blank"><img src="./Assets/instagram.svg"
+                            <a href="https://instagram.com" target="_blank"><img src="../Assets/instagram.svg"
                                     alt="instagram even"></a>
                         </li>
                         <li>
-                            <a href="https://web.telegram.org/" target="_blank"><img src="./Assets/telegram.svg"
+                            <a href="https://web.telegram.org/" target="_blank"><img src="../Assets/telegram.svg"
                                     alt="telegram  even"></a>
                         </li>
                     </ul>
@@ -152,43 +152,8 @@
             <p class="grid-16">EVEN 2021 - Direitos reservados.</p>
         </div>
     </div>
-    <script src="responsive_scripts.js"> </script>
-
-    <script>
-        const grid = document.querySelectorAll(".slider .portfolio");
-        const phrase = document.querySelectorAll(".sliderPhrases .quote_comments");
-        let set = 1;
-        let phraseIndex = 0;
-        const maxIndex = phrase.length;
-        let qtdGrids = grid.length
-
-        console.log(phrase[phraseIndex]);
-
-        function active2() {
-            phrase[phraseIndex].classList.remove("active");
-            phraseIndex++;
-            if (phraseIndex >= maxIndex) phraseIndex = 0;
-            phrase[phraseIndex].classList.add("active");
-        }
-
-        function active() {
-            grid[1].style.opacity = set;
-            set++;
-            if (set > 1) {
-                set = 0;
-            }
-        }
-
-
-        function start() {
-            setInterval(() => {
-                active();
-                active2()
-            }, 4000);
-        }
-
-        window.addEventListener("load", start())
-    </script>
+    <script src="../scripts/scripts.js"></script>
+    <script src="../scripts/slider.js"> </script>
 </body>
 
 </html>
